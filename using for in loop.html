@@ -1,0 +1,19 @@
+<script>
+const parent = {
+    firstName:'Bob',
+    lastname:'Smith',
+    age :70 ,
+};
+    
+
+const person= Object.create(parent) 
+
+    person.firstName='Bob';
+    person.age = 24;
+
+    console.dir(person);
+
+for (var prop in person){
+    console.log(prop + '='+person[prop]);
+}
+</script>
